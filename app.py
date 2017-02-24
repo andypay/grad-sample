@@ -34,9 +34,9 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     office = parameters.get("office")
 
-    wage = {'London':100, 'Birmingham':200, 'Edinburgh':300, 'Manchester':400, 'Belfast':500, 'Leeds':1000}
+    salary = {'London':100, 'Birmingham':200, 'Edinburgh':300, 'Manchester':400, 'Belfast':500, 'Leeds':1000}
 
-    speech = "The cost of shipping to " + office + " is " + str(wage[office]) + " euros."
+    speech = "The cost of shipping to " + office + " is " + str(salary[office]) + " euros."
 
     print("Response:")
     print(speech)
